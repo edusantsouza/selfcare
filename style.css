@@ -1,0 +1,140 @@
+/********************* gerais *********************/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  /* overflow: hidden; */
+  list-style: none;
+}
+
+body {
+  background-color: #F9F9F9;
+}
+
+
+
+
+/**************************** header**********************/
+
+header {
+  display: flex;
+  width: 100vw ;
+  height: 9.4rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+header .logo {
+  margin-left: 7rem ;
+}
+
+header .icon {
+  margin-right: 7rem;
+}
+
+.icon>a>img {
+  margin-left:3.7rem ;
+}
+
+
+/****************banner**********************/
+
+.banner {
+  width: 100vw;
+  
+}
+
+/****************main**********************/
+
+main {
+  background-color: #F9F9F9;
+  height: 100vh;
+}
+
+main .line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8.5rem;
+  border-bottom: solid 1px rgba(165, 161, 161, 0.2);
+}
+
+.line> h3 {
+  margin-left: 7rem;
+  font-size: 2rem;
+  font-weight: 700;
+  
+}
+
+.line> p {
+  margin-right: 7rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+
+
+/*************************produtos**********************/
+
+.produtos {
+  padding-top: 5.7rem;
+  padding-bottom: 5.7rem;
+  border-bottom: solid 1px rgba(165, 161, 161, 0.2);
+
+}
+
+.produtos li:hover{
+  transform: scale(1.05);
+  transition: .5s;
+}
+
+.produtos h3 {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: black;
+}
+
+.produtos p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: rgb(6, 134, 12)
+}
+
+.produtos span {
+  font-size: 1.4rem;
+  margin-right:.3rem;
+  color: black;
+  font-weight: 700;
+}
+
+
+.produtos ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  column-gap: 9.5rem;
+  row-gap: 6.5rem;
+}
+
+
+.produtos img {
+  width: 202px;
+  height: 202px;
+  border-radius: 0.5rem;
+}
+
+
+/*****************footer****************/
+
+ footer {
+  height: 34.8rem;
+  background-color: #F9F9F9;
+  border-top: solid 1px rgba(165, 161, 161, 0.2);
+  margin-top: 5.3rem;
+} 
