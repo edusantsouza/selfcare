@@ -1,6 +1,6 @@
 /********************* gerais *********************/
 *{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
@@ -8,10 +8,13 @@
   font-family: 'Lato', sans-serif;
   /* overflow: hidden; */
   list-style: none;
+  
 }
+
 
 body {
   background-color: #F9F9F9;
+  /* width: 100vw; */
 }
 
 
@@ -21,7 +24,7 @@ body {
 
 header {
   display: flex;
-  width: 100vw ;
+  width: 100vw;
   height: 9.4rem;
   justify-content: space-between;
   align-items: center;
@@ -44,18 +47,22 @@ header .icon {
 /****************banner**********************/
 
 .banner {
-  width: 100vw;
+    width: 100vw;
+
   
 }
 
-/****************main**********************/
+/****************section**********************/
 
-main {
+section {
   background-color: #F9F9F9;
   height: 100vh;
+  width: 100vw;
+
 }
 
-main .line {
+section .line {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,8 +90,8 @@ main .line {
 .produtos {
   padding-top: 5.7rem;
   padding-bottom: 5.7rem;
-  border-bottom: solid 1px rgba(165, 161, 161, 0.2);
-
+  /* border-bottom: solid 1px rgba(165, 161, 161, 0.2); */
+  min-width: 144rem;
 }
 
 .produtos li:hover{
@@ -103,7 +110,7 @@ main .line {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.3rem;
-  color: rgb(6, 134, 12)
+  color: #5CA720
 }
 
 .produtos span {
@@ -115,11 +122,21 @@ main .line {
 
 
 .produtos ul {
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  column-gap: 9.5rem;
+  column-gap: 39.5rem;
   row-gap: 6.5rem;
+  padding: 5rem;
+}
+
+.produtos li {
+  
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -133,8 +150,74 @@ main .line {
 /*****************footer****************/
 
  footer {
-  height: 34.8rem;
+  /* width: 100vw ; */
   background-color: #F9F9F9;
   border-top: solid 1px rgba(165, 161, 161, 0.2);
-  margin-top: 5.3rem;
+  
+ 
 } 
+
+footer .footer-up{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 21.6rem;
+  border-bottom: solid 1px rgba(165, 161, 161, 0.2);
+}
+
+
+footer .footer-up li {
+  margin-left: 5rem;
+ 
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: #161616;
+}
+
+footer .form {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer form label {
+  line-height: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #161616;
+  margin: 0;
+}
+
+footer form input {
+  width: 25.7rem;
+  height: 3.4rem;
+  margin: 0;
+}
+
+footer button{
+  margin: 0;
+  background-color: #5CA720;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 3.4rem;
+  width: 10.7rem;
+  color: #F9F9F9;
+}
+
+.input-box {
+  display: flex;
+
+}
+
+.input-box input {
+  font-size: 1.2rem;
+padding: 1rem;
+}
